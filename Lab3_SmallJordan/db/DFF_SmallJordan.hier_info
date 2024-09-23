@@ -1,0 +1,7 @@
+|DFF_SmallJordan
+D => Q~reg0.DATAIN
+Clock => Q~reg0.CLK
+Q <> Q~reg0
+QN <> <UNC>
+
+

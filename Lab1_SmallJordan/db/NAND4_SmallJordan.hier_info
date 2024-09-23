@@ -1,0 +1,8 @@
+|NAND4_SmallJordan
+A => Y~0.IN0
+B => Y~0.IN1
+C => Y~1.IN1
+D => Y~2.IN1
+Y <= Y~3.DB_MAX_OUTPUT_PORT_TYPE
+
+

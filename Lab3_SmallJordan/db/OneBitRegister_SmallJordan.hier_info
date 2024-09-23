@@ -1,0 +1,7 @@
+|OneBitRegister_SmallJordan
+D => Q~1.DATAB
+Clock => Q~reg0.CLK
+Load => Q~1.OUTPUTSELECT
+Q <> Q~reg0
+
+

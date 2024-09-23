@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="RAM8Reg_SmallJordan">
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_0" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_13" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_4" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_8" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_1" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_10" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_14" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_5" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_9" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_11" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_15" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_2" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_6" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_12" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_3" CBX_FILE_NAME="mux_ebc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM8Reg_SmallJordan|lpm_mux:RAM_rtl_7" CBX_FILE_NAME="mux_ebc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

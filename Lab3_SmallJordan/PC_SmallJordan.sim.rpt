@@ -1,0 +1,811 @@
+Simulator report for PC_SmallJordan
+Mon Nov 06 19:01:43 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 349 nodes    ;
+; Simulation Coverage         ;      22.19 % ;
+; Total Number of Transitions ; 627          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX3000A     ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      22.19 % ;
+; Total nodes checked                                 ; 349          ;
+; Total output ports checked                          ; 365          ;
+; Total output ports with complete 1/0-value coverage ; 81           ;
+; Total output ports with no 1/0-value coverage       ; 283          ;
+; Total output ports with no 1-value coverage         ; 283          ;
+; Total output ports with no 0-value coverage         ; 284          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                      ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |PC_SmallJordan|Q[0]~direct                                           ; |PC_SmallJordan|Q[0]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[1]~direct                                           ; |PC_SmallJordan|Q[1]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[2]~direct                                           ; |PC_SmallJordan|Q[2]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[3]~direct                                           ; |PC_SmallJordan|Q[3]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q~44                                                  ; |PC_SmallJordan|Q~44                                                  ; out              ;
+; |PC_SmallJordan|Q~45                                                  ; |PC_SmallJordan|Q~45                                                  ; out              ;
+; |PC_SmallJordan|Q~46                                                  ; |PC_SmallJordan|Q~46                                                  ; out              ;
+; |PC_SmallJordan|Q~47                                                  ; |PC_SmallJordan|Q~47                                                  ; out              ;
+; |PC_SmallJordan|Q~58                                                  ; |PC_SmallJordan|Q~58                                                  ; out              ;
+; |PC_SmallJordan|Q~60                                                  ; |PC_SmallJordan|Q~60                                                  ; out              ;
+; |PC_SmallJordan|Q~61                                                  ; |PC_SmallJordan|Q~61                                                  ; out              ;
+; |PC_SmallJordan|Q~62                                                  ; |PC_SmallJordan|Q~62                                                  ; out              ;
+; |PC_SmallJordan|Q~63                                                  ; |PC_SmallJordan|Q~63                                                  ; out              ;
+; |PC_SmallJordan|Q~76                                                  ; |PC_SmallJordan|Q~76                                                  ; out              ;
+; |PC_SmallJordan|Q~77                                                  ; |PC_SmallJordan|Q~77                                                  ; out              ;
+; |PC_SmallJordan|Q~78                                                  ; |PC_SmallJordan|Q~78                                                  ; out              ;
+; |PC_SmallJordan|Q~79                                                  ; |PC_SmallJordan|Q~79                                                  ; out              ;
+; |PC_SmallJordan|Q[0]~reg0                                             ; |PC_SmallJordan|Q[0]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[1]~reg0                                             ; |PC_SmallJordan|Q[1]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[2]~reg0                                             ; |PC_SmallJordan|Q[2]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[3]~reg0                                             ; |PC_SmallJordan|Q[3]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Load                                                  ; |PC_SmallJordan|Load                                                  ; out              ;
+; |PC_SmallJordan|Inc                                                   ; |PC_SmallJordan|Inc                                                   ; out              ;
+; |PC_SmallJordan|Reset                                                 ; |PC_SmallJordan|Reset                                                 ; out              ;
+; |PC_SmallJordan|Clock                                                 ; |PC_SmallJordan|Clock                                                 ; out              ;
+; |PC_SmallJordan|D[0]                                                  ; |PC_SmallJordan|D[0]                                                  ; out              ;
+; |PC_SmallJordan|D[1]                                                  ; |PC_SmallJordan|D[1]                                                  ; out              ;
+; |PC_SmallJordan|D[2]                                                  ; |PC_SmallJordan|D[2]                                                  ; out              ;
+; |PC_SmallJordan|D[3]                                                  ; |PC_SmallJordan|D[3]                                                  ; out              ;
+; |PC_SmallJordan|D[4]                                                  ; |PC_SmallJordan|D[4]                                                  ; out              ;
+; |PC_SmallJordan|D[5]                                                  ; |PC_SmallJordan|D[5]                                                  ; out              ;
+; |PC_SmallJordan|D[6]                                                  ; |PC_SmallJordan|D[6]                                                  ; out              ;
+; |PC_SmallJordan|D[7]                                                  ; |PC_SmallJordan|D[7]                                                  ; out              ;
+; |PC_SmallJordan|Q[0]                                                  ; |PC_SmallJordan|Q[0]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[1]                                                  ; |PC_SmallJordan|Q[1]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[2]                                                  ; |PC_SmallJordan|Q[2]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[3]                                                  ; |PC_SmallJordan|Q[3]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[3]~28                                               ; |PC_SmallJordan|Q[3]~28                                               ; out0             ;
+; |PC_SmallJordan|Q[2]~29                                               ; |PC_SmallJordan|Q[2]~29                                               ; out0             ;
+; |PC_SmallJordan|Q[1]~30                                               ; |PC_SmallJordan|Q[1]~30                                               ; out0             ;
+; |PC_SmallJordan|Q[0]~31                                               ; |PC_SmallJordan|Q[0]~31                                               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[1]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[2]~2             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[3]~3             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[3]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[3]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3                  ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3                  ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~0                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~0                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g4~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g4~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[1]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[2]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[0]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[1]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[2]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[3]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[3]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~1                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~1                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_result[0]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]~0 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]~1 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[3]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~16                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~16                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[0]~0      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[0]~0      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~19                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~19                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~20                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~20                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~21                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~21                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[0]~0      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[0]~0      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~22                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~22                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~23                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~23                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[1]~1      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[1]~1      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~25                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~25                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~40                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~40                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0~0               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0~0               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~43                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~43                ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                         ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |PC_SmallJordan|Q[4]~direct                                           ; |PC_SmallJordan|Q[4]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[5]~direct                                           ; |PC_SmallJordan|Q[5]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[6]~direct                                           ; |PC_SmallJordan|Q[6]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[7]~direct                                           ; |PC_SmallJordan|Q[7]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[8]~direct                                           ; |PC_SmallJordan|Q[8]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[9]~direct                                           ; |PC_SmallJordan|Q[9]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[10]~direct                                          ; |PC_SmallJordan|Q[10]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[11]~direct                                          ; |PC_SmallJordan|Q[11]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[12]~direct                                          ; |PC_SmallJordan|Q[12]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[13]~direct                                          ; |PC_SmallJordan|Q[13]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[14]~direct                                          ; |PC_SmallJordan|Q[14]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[15]~direct                                          ; |PC_SmallJordan|Q[15]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q~32                                                  ; |PC_SmallJordan|Q~32                                                  ; out              ;
+; |PC_SmallJordan|Q~33                                                  ; |PC_SmallJordan|Q~33                                                  ; out              ;
+; |PC_SmallJordan|Q~34                                                  ; |PC_SmallJordan|Q~34                                                  ; out              ;
+; |PC_SmallJordan|Q~35                                                  ; |PC_SmallJordan|Q~35                                                  ; out              ;
+; |PC_SmallJordan|Q~36                                                  ; |PC_SmallJordan|Q~36                                                  ; out              ;
+; |PC_SmallJordan|Q~37                                                  ; |PC_SmallJordan|Q~37                                                  ; out              ;
+; |PC_SmallJordan|Q~38                                                  ; |PC_SmallJordan|Q~38                                                  ; out              ;
+; |PC_SmallJordan|Q~39                                                  ; |PC_SmallJordan|Q~39                                                  ; out              ;
+; |PC_SmallJordan|Q~40                                                  ; |PC_SmallJordan|Q~40                                                  ; out              ;
+; |PC_SmallJordan|Q~41                                                  ; |PC_SmallJordan|Q~41                                                  ; out              ;
+; |PC_SmallJordan|Q~42                                                  ; |PC_SmallJordan|Q~42                                                  ; out              ;
+; |PC_SmallJordan|Q~43                                                  ; |PC_SmallJordan|Q~43                                                  ; out              ;
+; |PC_SmallJordan|Q~48                                                  ; |PC_SmallJordan|Q~48                                                  ; out              ;
+; |PC_SmallJordan|Q~49                                                  ; |PC_SmallJordan|Q~49                                                  ; out              ;
+; |PC_SmallJordan|Q~50                                                  ; |PC_SmallJordan|Q~50                                                  ; out              ;
+; |PC_SmallJordan|Q~51                                                  ; |PC_SmallJordan|Q~51                                                  ; out              ;
+; |PC_SmallJordan|Q~52                                                  ; |PC_SmallJordan|Q~52                                                  ; out              ;
+; |PC_SmallJordan|Q~53                                                  ; |PC_SmallJordan|Q~53                                                  ; out              ;
+; |PC_SmallJordan|Q~54                                                  ; |PC_SmallJordan|Q~54                                                  ; out              ;
+; |PC_SmallJordan|Q~55                                                  ; |PC_SmallJordan|Q~55                                                  ; out              ;
+; |PC_SmallJordan|Q~56                                                  ; |PC_SmallJordan|Q~56                                                  ; out              ;
+; |PC_SmallJordan|Q~57                                                  ; |PC_SmallJordan|Q~57                                                  ; out              ;
+; |PC_SmallJordan|Q~59                                                  ; |PC_SmallJordan|Q~59                                                  ; out              ;
+; |PC_SmallJordan|Q~64                                                  ; |PC_SmallJordan|Q~64                                                  ; out              ;
+; |PC_SmallJordan|Q~65                                                  ; |PC_SmallJordan|Q~65                                                  ; out              ;
+; |PC_SmallJordan|Q~66                                                  ; |PC_SmallJordan|Q~66                                                  ; out              ;
+; |PC_SmallJordan|Q~67                                                  ; |PC_SmallJordan|Q~67                                                  ; out              ;
+; |PC_SmallJordan|Q~68                                                  ; |PC_SmallJordan|Q~68                                                  ; out              ;
+; |PC_SmallJordan|Q~69                                                  ; |PC_SmallJordan|Q~69                                                  ; out              ;
+; |PC_SmallJordan|Q~70                                                  ; |PC_SmallJordan|Q~70                                                  ; out              ;
+; |PC_SmallJordan|Q~71                                                  ; |PC_SmallJordan|Q~71                                                  ; out              ;
+; |PC_SmallJordan|Q~72                                                  ; |PC_SmallJordan|Q~72                                                  ; out              ;
+; |PC_SmallJordan|Q~73                                                  ; |PC_SmallJordan|Q~73                                                  ; out              ;
+; |PC_SmallJordan|Q~74                                                  ; |PC_SmallJordan|Q~74                                                  ; out              ;
+; |PC_SmallJordan|Q~75                                                  ; |PC_SmallJordan|Q~75                                                  ; out              ;
+; |PC_SmallJordan|Q[4]~reg0                                             ; |PC_SmallJordan|Q[4]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[5]~reg0                                             ; |PC_SmallJordan|Q[5]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[6]~reg0                                             ; |PC_SmallJordan|Q[6]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[7]~reg0                                             ; |PC_SmallJordan|Q[7]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[8]~reg0                                             ; |PC_SmallJordan|Q[8]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[9]~reg0                                             ; |PC_SmallJordan|Q[9]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[10]~reg0                                            ; |PC_SmallJordan|Q[10]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[11]~reg0                                            ; |PC_SmallJordan|Q[11]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[12]~reg0                                            ; |PC_SmallJordan|Q[12]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[13]~reg0                                            ; |PC_SmallJordan|Q[13]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[14]~reg0                                            ; |PC_SmallJordan|Q[14]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[15]~reg0                                            ; |PC_SmallJordan|Q[15]~reg0                                            ; regout           ;
+; |PC_SmallJordan|D[9]                                                  ; |PC_SmallJordan|D[9]                                                  ; out              ;
+; |PC_SmallJordan|D[10]                                                 ; |PC_SmallJordan|D[10]                                                 ; out              ;
+; |PC_SmallJordan|D[11]                                                 ; |PC_SmallJordan|D[11]                                                 ; out              ;
+; |PC_SmallJordan|D[12]                                                 ; |PC_SmallJordan|D[12]                                                 ; out              ;
+; |PC_SmallJordan|D[13]                                                 ; |PC_SmallJordan|D[13]                                                 ; out              ;
+; |PC_SmallJordan|D[14]                                                 ; |PC_SmallJordan|D[14]                                                 ; out              ;
+; |PC_SmallJordan|D[15]                                                 ; |PC_SmallJordan|D[15]                                                 ; out              ;
+; |PC_SmallJordan|Q[0]                                                  ; |PC_SmallJordan|Q[0]                                                  ; out              ;
+; |PC_SmallJordan|Q[1]                                                  ; |PC_SmallJordan|Q[1]                                                  ; out              ;
+; |PC_SmallJordan|Q[2]                                                  ; |PC_SmallJordan|Q[2]                                                  ; out              ;
+; |PC_SmallJordan|Q[3]                                                  ; |PC_SmallJordan|Q[3]                                                  ; out              ;
+; |PC_SmallJordan|Q[4]                                                  ; |PC_SmallJordan|Q[4]                                                  ; out              ;
+; |PC_SmallJordan|Q[4]                                                  ; |PC_SmallJordan|Q[4]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[5]                                                  ; |PC_SmallJordan|Q[5]                                                  ; out              ;
+; |PC_SmallJordan|Q[5]                                                  ; |PC_SmallJordan|Q[5]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[6]                                                  ; |PC_SmallJordan|Q[6]                                                  ; out              ;
+; |PC_SmallJordan|Q[6]                                                  ; |PC_SmallJordan|Q[6]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[7]                                                  ; |PC_SmallJordan|Q[7]                                                  ; out              ;
+; |PC_SmallJordan|Q[7]                                                  ; |PC_SmallJordan|Q[7]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[8]                                                  ; |PC_SmallJordan|Q[8]                                                  ; out              ;
+; |PC_SmallJordan|Q[8]                                                  ; |PC_SmallJordan|Q[8]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[9]                                                  ; |PC_SmallJordan|Q[9]                                                  ; out              ;
+; |PC_SmallJordan|Q[9]                                                  ; |PC_SmallJordan|Q[9]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[10]                                                 ; |PC_SmallJordan|Q[10]                                                 ; out              ;
+; |PC_SmallJordan|Q[10]                                                 ; |PC_SmallJordan|Q[10]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[11]                                                 ; |PC_SmallJordan|Q[11]                                                 ; out              ;
+; |PC_SmallJordan|Q[11]                                                 ; |PC_SmallJordan|Q[11]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[12]                                                 ; |PC_SmallJordan|Q[12]                                                 ; out              ;
+; |PC_SmallJordan|Q[12]                                                 ; |PC_SmallJordan|Q[12]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[13]                                                 ; |PC_SmallJordan|Q[13]                                                 ; out              ;
+; |PC_SmallJordan|Q[13]                                                 ; |PC_SmallJordan|Q[13]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[14]                                                 ; |PC_SmallJordan|Q[14]                                                 ; out              ;
+; |PC_SmallJordan|Q[14]                                                 ; |PC_SmallJordan|Q[14]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[15]                                                 ; |PC_SmallJordan|Q[15]                                                 ; out              ;
+; |PC_SmallJordan|Q[15]                                                 ; |PC_SmallJordan|Q[15]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[15]~16                                              ; |PC_SmallJordan|Q[15]~16                                              ; out0             ;
+; |PC_SmallJordan|Q[14]~17                                              ; |PC_SmallJordan|Q[14]~17                                              ; out0             ;
+; |PC_SmallJordan|Q[13]~18                                              ; |PC_SmallJordan|Q[13]~18                                              ; out0             ;
+; |PC_SmallJordan|Q[12]~19                                              ; |PC_SmallJordan|Q[12]~19                                              ; out0             ;
+; |PC_SmallJordan|Q[11]~20                                              ; |PC_SmallJordan|Q[11]~20                                              ; out0             ;
+; |PC_SmallJordan|Q[10]~21                                              ; |PC_SmallJordan|Q[10]~21                                              ; out0             ;
+; |PC_SmallJordan|Q[9]~22                                               ; |PC_SmallJordan|Q[9]~22                                               ; out0             ;
+; |PC_SmallJordan|Q[8]~23                                               ; |PC_SmallJordan|Q[8]~23                                               ; out0             ;
+; |PC_SmallJordan|Q[7]~24                                               ; |PC_SmallJordan|Q[7]~24                                               ; out0             ;
+; |PC_SmallJordan|Q[6]~25                                               ; |PC_SmallJordan|Q[6]~25                                               ; out0             ;
+; |PC_SmallJordan|Q[5]~26                                               ; |PC_SmallJordan|Q[5]~26                                               ; out0             ;
+; |PC_SmallJordan|Q[4]~27                                               ; |PC_SmallJordan|Q[4]~27                                               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0         ; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0         ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[4]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[4]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[5]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[5]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[6]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[6]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[7]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[7]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[7]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[7]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~2                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~2                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~3                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~3                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~4                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~4                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~5                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~5                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~6                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~6                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~7                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~7                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~17                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~17                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~18                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~18                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~24                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~24                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~26                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~26                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~27                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~27                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~28                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~28                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~29                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~29                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~30                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~30                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~31                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~31                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~32                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~32                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~33                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~33                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~34                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~34                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~35                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~35                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~36                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~36                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~37                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~37                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~38                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~38                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~39                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~39                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~41                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~41                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~42                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~42                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~44                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~44                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[6]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[6]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[5]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[5]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[4]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[4]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[3]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[3]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[2]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[2]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[2]~2             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[2]~2             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[3]~3             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[3]~3             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[3]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[3]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[4]~4             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[4]~4             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[4]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[4]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[5]~5             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[5]~5             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[5]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[5]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[6]~6             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[6]~6             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[6]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[6]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[7]~7             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[7]~7             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[7]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[7]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[7]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[7]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3                  ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3                  ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~0                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~0                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g4~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g4~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]~1            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]~1            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[1]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[1]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[2]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[2]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[3]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[3]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]~1   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]~1   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]~2   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]~2   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~1                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~1                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~2                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~2                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~3                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~3                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]~1 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]~1 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[3]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[3]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~4                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~4                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]~2 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]~2 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~5                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~5                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]~3 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]~3 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~6                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~6                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]~4 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]~4 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~7                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~7                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]~5 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]~5 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]   ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                         ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |PC_SmallJordan|Q[4]~direct                                           ; |PC_SmallJordan|Q[4]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[5]~direct                                           ; |PC_SmallJordan|Q[5]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[6]~direct                                           ; |PC_SmallJordan|Q[6]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[7]~direct                                           ; |PC_SmallJordan|Q[7]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[8]~direct                                           ; |PC_SmallJordan|Q[8]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[9]~direct                                           ; |PC_SmallJordan|Q[9]~direct                                           ; out0             ;
+; |PC_SmallJordan|Q[10]~direct                                          ; |PC_SmallJordan|Q[10]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[11]~direct                                          ; |PC_SmallJordan|Q[11]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[12]~direct                                          ; |PC_SmallJordan|Q[12]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[13]~direct                                          ; |PC_SmallJordan|Q[13]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[14]~direct                                          ; |PC_SmallJordan|Q[14]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q[15]~direct                                          ; |PC_SmallJordan|Q[15]~direct                                          ; out0             ;
+; |PC_SmallJordan|Q~32                                                  ; |PC_SmallJordan|Q~32                                                  ; out              ;
+; |PC_SmallJordan|Q~33                                                  ; |PC_SmallJordan|Q~33                                                  ; out              ;
+; |PC_SmallJordan|Q~34                                                  ; |PC_SmallJordan|Q~34                                                  ; out              ;
+; |PC_SmallJordan|Q~35                                                  ; |PC_SmallJordan|Q~35                                                  ; out              ;
+; |PC_SmallJordan|Q~36                                                  ; |PC_SmallJordan|Q~36                                                  ; out              ;
+; |PC_SmallJordan|Q~37                                                  ; |PC_SmallJordan|Q~37                                                  ; out              ;
+; |PC_SmallJordan|Q~38                                                  ; |PC_SmallJordan|Q~38                                                  ; out              ;
+; |PC_SmallJordan|Q~39                                                  ; |PC_SmallJordan|Q~39                                                  ; out              ;
+; |PC_SmallJordan|Q~40                                                  ; |PC_SmallJordan|Q~40                                                  ; out              ;
+; |PC_SmallJordan|Q~41                                                  ; |PC_SmallJordan|Q~41                                                  ; out              ;
+; |PC_SmallJordan|Q~42                                                  ; |PC_SmallJordan|Q~42                                                  ; out              ;
+; |PC_SmallJordan|Q~43                                                  ; |PC_SmallJordan|Q~43                                                  ; out              ;
+; |PC_SmallJordan|Q~48                                                  ; |PC_SmallJordan|Q~48                                                  ; out              ;
+; |PC_SmallJordan|Q~49                                                  ; |PC_SmallJordan|Q~49                                                  ; out              ;
+; |PC_SmallJordan|Q~50                                                  ; |PC_SmallJordan|Q~50                                                  ; out              ;
+; |PC_SmallJordan|Q~51                                                  ; |PC_SmallJordan|Q~51                                                  ; out              ;
+; |PC_SmallJordan|Q~52                                                  ; |PC_SmallJordan|Q~52                                                  ; out              ;
+; |PC_SmallJordan|Q~53                                                  ; |PC_SmallJordan|Q~53                                                  ; out              ;
+; |PC_SmallJordan|Q~54                                                  ; |PC_SmallJordan|Q~54                                                  ; out              ;
+; |PC_SmallJordan|Q~55                                                  ; |PC_SmallJordan|Q~55                                                  ; out              ;
+; |PC_SmallJordan|Q~56                                                  ; |PC_SmallJordan|Q~56                                                  ; out              ;
+; |PC_SmallJordan|Q~57                                                  ; |PC_SmallJordan|Q~57                                                  ; out              ;
+; |PC_SmallJordan|Q~59                                                  ; |PC_SmallJordan|Q~59                                                  ; out              ;
+; |PC_SmallJordan|Q~64                                                  ; |PC_SmallJordan|Q~64                                                  ; out              ;
+; |PC_SmallJordan|Q~65                                                  ; |PC_SmallJordan|Q~65                                                  ; out              ;
+; |PC_SmallJordan|Q~66                                                  ; |PC_SmallJordan|Q~66                                                  ; out              ;
+; |PC_SmallJordan|Q~67                                                  ; |PC_SmallJordan|Q~67                                                  ; out              ;
+; |PC_SmallJordan|Q~68                                                  ; |PC_SmallJordan|Q~68                                                  ; out              ;
+; |PC_SmallJordan|Q~69                                                  ; |PC_SmallJordan|Q~69                                                  ; out              ;
+; |PC_SmallJordan|Q~70                                                  ; |PC_SmallJordan|Q~70                                                  ; out              ;
+; |PC_SmallJordan|Q~71                                                  ; |PC_SmallJordan|Q~71                                                  ; out              ;
+; |PC_SmallJordan|Q~72                                                  ; |PC_SmallJordan|Q~72                                                  ; out              ;
+; |PC_SmallJordan|Q~73                                                  ; |PC_SmallJordan|Q~73                                                  ; out              ;
+; |PC_SmallJordan|Q~74                                                  ; |PC_SmallJordan|Q~74                                                  ; out              ;
+; |PC_SmallJordan|Q~75                                                  ; |PC_SmallJordan|Q~75                                                  ; out              ;
+; |PC_SmallJordan|Q[4]~reg0                                             ; |PC_SmallJordan|Q[4]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[5]~reg0                                             ; |PC_SmallJordan|Q[5]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[6]~reg0                                             ; |PC_SmallJordan|Q[6]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[7]~reg0                                             ; |PC_SmallJordan|Q[7]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[8]~reg0                                             ; |PC_SmallJordan|Q[8]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[9]~reg0                                             ; |PC_SmallJordan|Q[9]~reg0                                             ; regout           ;
+; |PC_SmallJordan|Q[10]~reg0                                            ; |PC_SmallJordan|Q[10]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[11]~reg0                                            ; |PC_SmallJordan|Q[11]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[12]~reg0                                            ; |PC_SmallJordan|Q[12]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[13]~reg0                                            ; |PC_SmallJordan|Q[13]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[14]~reg0                                            ; |PC_SmallJordan|Q[14]~reg0                                            ; regout           ;
+; |PC_SmallJordan|Q[15]~reg0                                            ; |PC_SmallJordan|Q[15]~reg0                                            ; regout           ;
+; |PC_SmallJordan|D[8]                                                  ; |PC_SmallJordan|D[8]                                                  ; out              ;
+; |PC_SmallJordan|D[9]                                                  ; |PC_SmallJordan|D[9]                                                  ; out              ;
+; |PC_SmallJordan|D[10]                                                 ; |PC_SmallJordan|D[10]                                                 ; out              ;
+; |PC_SmallJordan|D[11]                                                 ; |PC_SmallJordan|D[11]                                                 ; out              ;
+; |PC_SmallJordan|D[12]                                                 ; |PC_SmallJordan|D[12]                                                 ; out              ;
+; |PC_SmallJordan|D[13]                                                 ; |PC_SmallJordan|D[13]                                                 ; out              ;
+; |PC_SmallJordan|D[14]                                                 ; |PC_SmallJordan|D[14]                                                 ; out              ;
+; |PC_SmallJordan|D[15]                                                 ; |PC_SmallJordan|D[15]                                                 ; out              ;
+; |PC_SmallJordan|Q[0]                                                  ; |PC_SmallJordan|Q[0]                                                  ; out              ;
+; |PC_SmallJordan|Q[1]                                                  ; |PC_SmallJordan|Q[1]                                                  ; out              ;
+; |PC_SmallJordan|Q[2]                                                  ; |PC_SmallJordan|Q[2]                                                  ; out              ;
+; |PC_SmallJordan|Q[3]                                                  ; |PC_SmallJordan|Q[3]                                                  ; out              ;
+; |PC_SmallJordan|Q[4]                                                  ; |PC_SmallJordan|Q[4]                                                  ; out              ;
+; |PC_SmallJordan|Q[4]                                                  ; |PC_SmallJordan|Q[4]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[5]                                                  ; |PC_SmallJordan|Q[5]                                                  ; out              ;
+; |PC_SmallJordan|Q[5]                                                  ; |PC_SmallJordan|Q[5]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[6]                                                  ; |PC_SmallJordan|Q[6]                                                  ; out              ;
+; |PC_SmallJordan|Q[6]                                                  ; |PC_SmallJordan|Q[6]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[7]                                                  ; |PC_SmallJordan|Q[7]                                                  ; out              ;
+; |PC_SmallJordan|Q[7]                                                  ; |PC_SmallJordan|Q[7]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[8]                                                  ; |PC_SmallJordan|Q[8]                                                  ; out              ;
+; |PC_SmallJordan|Q[8]                                                  ; |PC_SmallJordan|Q[8]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[9]                                                  ; |PC_SmallJordan|Q[9]                                                  ; out              ;
+; |PC_SmallJordan|Q[9]                                                  ; |PC_SmallJordan|Q[9]~result                                           ; pin_out          ;
+; |PC_SmallJordan|Q[10]                                                 ; |PC_SmallJordan|Q[10]                                                 ; out              ;
+; |PC_SmallJordan|Q[10]                                                 ; |PC_SmallJordan|Q[10]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[11]                                                 ; |PC_SmallJordan|Q[11]                                                 ; out              ;
+; |PC_SmallJordan|Q[11]                                                 ; |PC_SmallJordan|Q[11]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[12]                                                 ; |PC_SmallJordan|Q[12]                                                 ; out              ;
+; |PC_SmallJordan|Q[12]                                                 ; |PC_SmallJordan|Q[12]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[13]                                                 ; |PC_SmallJordan|Q[13]                                                 ; out              ;
+; |PC_SmallJordan|Q[13]                                                 ; |PC_SmallJordan|Q[13]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[14]                                                 ; |PC_SmallJordan|Q[14]                                                 ; out              ;
+; |PC_SmallJordan|Q[14]                                                 ; |PC_SmallJordan|Q[14]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[15]                                                 ; |PC_SmallJordan|Q[15]                                                 ; out              ;
+; |PC_SmallJordan|Q[15]                                                 ; |PC_SmallJordan|Q[15]~result                                          ; pin_out          ;
+; |PC_SmallJordan|Q[15]~16                                              ; |PC_SmallJordan|Q[15]~16                                              ; out0             ;
+; |PC_SmallJordan|Q[14]~17                                              ; |PC_SmallJordan|Q[14]~17                                              ; out0             ;
+; |PC_SmallJordan|Q[13]~18                                              ; |PC_SmallJordan|Q[13]~18                                              ; out0             ;
+; |PC_SmallJordan|Q[12]~19                                              ; |PC_SmallJordan|Q[12]~19                                              ; out0             ;
+; |PC_SmallJordan|Q[11]~20                                              ; |PC_SmallJordan|Q[11]~20                                              ; out0             ;
+; |PC_SmallJordan|Q[10]~21                                              ; |PC_SmallJordan|Q[10]~21                                              ; out0             ;
+; |PC_SmallJordan|Q[9]~22                                               ; |PC_SmallJordan|Q[9]~22                                               ; out0             ;
+; |PC_SmallJordan|Q[8]~23                                               ; |PC_SmallJordan|Q[8]~23                                               ; out0             ;
+; |PC_SmallJordan|Q[7]~24                                               ; |PC_SmallJordan|Q[7]~24                                               ; out0             ;
+; |PC_SmallJordan|Q[6]~25                                               ; |PC_SmallJordan|Q[6]~25                                               ; out0             ;
+; |PC_SmallJordan|Q[5]~26                                               ; |PC_SmallJordan|Q[5]~26                                               ; out0             ;
+; |PC_SmallJordan|Q[4]~27                                               ; |PC_SmallJordan|Q[4]~27                                               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0         ; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0         ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[4]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[4]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[5]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[5]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[6]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[6]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[7]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|psi[7]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[7]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gn[7]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|pc[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g3~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~2                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~2                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~3                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~3                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~4                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~4                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~5                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~5                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~6                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~6                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~7                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~7                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~17                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~17                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~18                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~18                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~24                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~24                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~26                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~26                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~27                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~27                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~28                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~28                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~29                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~29                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~30                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~30                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~31                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~31                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~32                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~32                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~33                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~33                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~34                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~34                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~35                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~35                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~36                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~36                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~37                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~37                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~38                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~38                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~39                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~39                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3      ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3      ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|gp0                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~41                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~41                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~42                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~42                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~44                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|_~44                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[6]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[6]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[5]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[5]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[4]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[4]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[3]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[3]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[2]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[2]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]       ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]       ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[2]~2             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[2]~2             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[3]~3             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[3]~3             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[3]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[3]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[4]~4             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[4]~4             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[4]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[4]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[5]~5             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[5]~5             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[5]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[5]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[6]~6             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[6]~6             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[6]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[6]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[7]~7             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|ps[7]~7             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[7]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|psi[7]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[7]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gn[7]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[3]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[3]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[4]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[4]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[5]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[5]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[6]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|pc[6]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3                  ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g3                  ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~0                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~0                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g4~0                ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g4~0                ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[0]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[0]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|p2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[0]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[0]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]~0             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]~0             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[1]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]~1             ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]~1             ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]               ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|gc[2]               ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]~0            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]~0            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[1]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]~1            ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]~1            ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]              ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|g2c[2]              ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[1]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[1]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[2]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[2]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[3]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[3]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[4]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]~1   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]~1   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[5]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]~2   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]~2   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]     ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[6]     ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~1                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~1                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~2                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~2                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~3                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~3                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]~1 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]~1 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[2]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[3]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[3]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~4                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~4                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]~2 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]~2 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[4]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~5                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~5                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]~3 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]~3 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[5]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~6                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~6                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]~4 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]~4 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[6]   ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~7                 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|_~7                 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]~5 ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]~5 ; out0             ;
+; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]   ; |PC_SmallJordan|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[7]   ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Nov 06 19:01:43 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off PC_SmallJordan -c PC_SmallJordan
+Info: Using vector source file "C:/Users/Jordan/Desktop/Desktop/School/Fall 2023/CDA3203/Lab3_SmallJordan/PC_SmallJordan.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of PC_SmallJordan.vwf called PC_SmallJordan.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      22.19 %
+Info: Number of transitions in simulation is 627
+Info: Vector file PC_SmallJordan.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 141 megabytes
+    Info: Processing ended: Mon Nov 06 19:01:43 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

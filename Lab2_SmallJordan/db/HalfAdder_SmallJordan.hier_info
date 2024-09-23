@@ -1,0 +1,11 @@
+|HalfAdder_SmallJordan
+A => w1.IN0
+A => w4.IN0
+A => w5.IN0
+B => w2.IN0
+B => w3.IN0
+B => w5.IN1
+Cout <= Cout~0.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

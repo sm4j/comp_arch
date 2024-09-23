@@ -1,0 +1,184 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+29
+1784
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+FullAdder_SmallJordan
+# storage
+db|FourBitAdder_SmallJordan.(1).cnf
+db|FourBitAdder_SmallJordan.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fulladder_smalljordan.vhd
+19649d6fa41548f17f152c9ad25baec6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FullAdder_SmallJordan:fa0
+FullAdder_SmallJordan:fa1
+FullAdder_SmallJordan:fa2
+FullAdder_SmallJordan:fa3
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+NAND3_SmallJordan
+# storage
+db|FourBitAdder_SmallJordan.(2).cnf
+db|FourBitAdder_SmallJordan.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+nand3_smalljordan.vhd
+709e5ab5af63d08fa1f95b82363e255
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3a
+FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3b
+FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3c
+FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3d
+FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e
+FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3a
+FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b
+FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3c
+FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3d
+FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e
+FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3a
+FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b
+FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c
+FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3d
+FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e
+FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3a
+FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b
+FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3c
+FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3d
+FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+NAND4_SmallJordan
+# storage
+db|FourBitAdder_SmallJordan.(3).cnf
+db|FourBitAdder_SmallJordan.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+nand4_smalljordan.vhd
+f51e225488e3a0216dfcd2a3a33ede20
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a
+FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a
+FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a
+FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+FourBitAdder_SmallJordan
+# storage
+db|FourBitAdder_SmallJordan.(0).cnf
+db|FourBitAdder_SmallJordan.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fourbitadder_smalljordan.vhd
+94ae53c42146d119b0d8cb808b89aa50
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+adders_smalljordan.vhd
+9cb4f4fa2129ed8b824b02ae54788d0
+}
+# hierarchies {
+|
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

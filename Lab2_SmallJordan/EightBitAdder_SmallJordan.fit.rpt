@@ -1,0 +1,488 @@
+Fitter report for EightBitAdder_SmallJordan
+Fri Oct 13 18:49:16 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Non-Global High Fan-Out Signals
+ 15. Interconnect Usage Summary
+ 16. LAB Macrocells
+ 17. Parallel Expander
+ 18. Shareable Expander
+ 19. Logic Cell Interconnection
+ 20. Fitter Device Options
+ 21. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; Fitter Summary                                                       ;
++-----------------------+----------------------------------------------+
+; Fitter Status         ; Successful - Fri Oct 13 18:49:16 2023        ;
+; Quartus II Version    ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name         ; EightBitAdder_SmallJordan                    ;
+; Top-level Entity Name ; EightBitAdder_SmallJordan                    ;
+; Family                ; MAX3000A                                     ;
+; Device                ; EPM3064ALC44-10                              ;
+; Timing Models         ; Final                                        ;
+; Total macrocells      ; 33 / 64 ( 52 % )                             ;
+; Total pins            ; 30 / 34 ( 88 % )                             ;
++-----------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                              ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM3064ALC44-10 ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Use TimeQuest Timing Analyzer                                              ; Off             ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off             ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off             ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; On              ; On            ;
+; Limit to One Fitting Attempt                                               ; Off             ; Off           ;
+; Fitter Initial Placement Seed                                              ; 1               ; 1             ;
+; Slow Slew Rate                                                             ; Off             ; Off           ;
+; Fitter Effort                                                              ; Auto Fit        ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off             ; Off           ;
+; Use Best Effort Settings for Compilation                                   ; Off             ; Off           ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/Jordan/Desktop/Desktop/School/Fall 2023/CDA3203/Lab2_SmallJordan/EightBitAdder_SmallJordan.pin.
+
+
++------------------------------------------------------+
+; Fitter Resource Usage Summary                        ;
++-----------------------------------+------------------+
+; Resource                          ; Usage            ;
++-----------------------------------+------------------+
+; Logic cells                       ; 33 / 64 ( 52 % ) ;
+; Registers                         ; 0 / 64 ( 0 % )   ;
+; Number of pterms used             ; 126              ;
+; User inserted logic elements      ; 0                ;
+; I/O pins                          ; 30 / 34 ( 88 % ) ;
+;     -- Clock pins                 ; 1 / 2 ( 50 % )   ;
+;     -- Dedicated input pins       ; 2 / 2 ( 100 % )  ;
+; Global signals                    ; 0                ;
+; Shareable expanders               ; 12 / 64 ( 19 % ) ;
+; Parallel expanders                ; 16 / 60 ( 27 % ) ;
+; Cells using turbo bit             ; 33 / 64 ( 52 % ) ;
+; Maximum fan-out node              ; B0               ;
+; Maximum fan-out                   ; 17               ;
+; Highest non-global fan-out signal ; B0               ;
+; Highest non-global fan-out        ; 17               ;
+; Total fan-out                     ; 254              ;
+; Average fan-out                   ; 3.39             ;
++-----------------------------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; Name ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; I/O Standard ; Location assigned by ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; A0   ; 1     ; --       ; --  ; 16                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A1   ; 19    ; --       ; 2   ; 14                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A2   ; 9     ; --       ; 1   ; 12                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A3   ; 2     ; --       ; --  ; 9                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A4   ; 41    ; --       ; 4   ; 8                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A5   ; 28    ; --       ; 3   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A6   ; 24    ; --       ; 3   ; 8                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; A7   ; 12    ; --       ; 1   ; 5                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B0   ; 27    ; --       ; 3   ; 17                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B1   ; 37    ; --       ; 4   ; 14                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B2   ; 29    ; --       ; 3   ; 11                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B3   ; 40    ; --       ; 4   ; 9                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B4   ; 4     ; --       ; 1   ; 7                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B5   ; 31    ; --       ; 3   ; 10                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B6   ; 44    ; --       ; --  ; 7                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; B7   ; 11    ; --       ; 1   ; 6                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; Cin  ; 26    ; --       ; 3   ; 15                    ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
++------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                              ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Cout ; 16    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S0   ; 8     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S1   ; 20    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S2   ; 6     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S3   ; 5     ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S4   ; 25    ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S5   ; 34    ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S6   ; 14    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; S7   ; 18    ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
++------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 0          ; --       ; A0             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 2        ; 1          ; --       ; A3             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 3        ; 2          ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 4        ; 3          ; --       ; B4             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 5        ; 4          ; --       ; S3             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 6        ; 5          ; --       ; S2             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 7        ; 6          ; --       ; TDI            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 8        ; 7          ; --       ; S0             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 9        ; 8          ; --       ; A2             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 10       ; 9          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 11       ; 10         ; --       ; B7             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 12       ; 11         ; --       ; A7             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 13       ; 12         ; --       ; TMS            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 14       ; 13         ; --       ; S6             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 15       ; 14         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 16       ; 15         ; --       ; Cout           ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 17       ; 16         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 18       ; 17         ; --       ; S7             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 19       ; 18         ; --       ; A1             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 20       ; 19         ; --       ; S1             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 21       ; 20         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 22       ; 21         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 23       ; 22         ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 24       ; 23         ; --       ; A6             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 25       ; 24         ; --       ; S4             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 26       ; 25         ; --       ; Cin            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 27       ; 26         ; --       ; B0             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 28       ; 27         ; --       ; A5             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 29       ; 28         ; --       ; B2             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 30       ; 29         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 31       ; 30         ; --       ; B5             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 32       ; 31         ; --       ; TCK            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 33       ; 32         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 34       ; 33         ; --       ; S5             ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 35       ; 34         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 36       ; 35         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 37       ; 36         ; --       ; B1             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 38       ; 37         ; --       ; TDO            ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 39       ; 38         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 40       ; 39         ; --       ; B3             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 41       ; 40         ; --       ; A4             ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 42       ; 41         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 43       ; 42         ; --       ; GND+           ;        ;              ;         ;                 ;
+; 44       ; 43         ; --       ; B6             ; input  ; 3.3-V LVTTL  ;         ; N               ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; 3.3-V LVTTL  ; -          ; 3                    ; 0                 ; 0                 ; 3     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++--------------------------------------------------------------------+
+; Dedicated Inputs I/O                                               ;
++------+-------+-------+-------+--------------+------------+---------+
+; Name ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++------+-------+-------+-------+--------------+------------+---------+
+; A0   ; 1     ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
+; A3   ; 2     ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
+; B6   ; 44    ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
++------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; 3.3-V PCI    ; 10 pF ; 25 Ohm (Parallel)      ;
+; 2.5 V        ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                ;
++-------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; Macrocells ; Pins ; Full Hierarchy Name                                                                                         ; Library Name ;
++-------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------------+--------------+
+; |EightBitAdder_SmallJordan          ; 33         ; 30   ; |EightBitAdder_SmallJordan                                                                                  ; work         ;
+;    |FourBitAdder_SmallJordan:fba0|  ; 17         ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0                                                    ; work         ;
+;       |FullAdder_SmallJordan:fa0|   ; 1          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa0                          ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 1          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa1|   ; 3          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1                          ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 3          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa2|   ; 8          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2                          ; work         ;
+;          |NAND3_SmallJordan:nand3e| ; 3          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 5          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa3|   ; 5          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3                          ; work         ;
+;          |NAND3_SmallJordan:nand3b| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b ; work         ;
+;          |NAND3_SmallJordan:nand3e| ; 1          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 4          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a ; work         ;
+;    |FourBitAdder_SmallJordan:fba1|  ; 16         ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1                                                    ; work         ;
+;       |FullAdder_SmallJordan:fa0|   ; 4          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0                          ; work         ;
+;          |NAND3_SmallJordan:nand3b| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3b ; work         ;
+;          |NAND3_SmallJordan:nand3e| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa1|   ; 5          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1                          ; work         ;
+;          |NAND3_SmallJordan:nand3b| ; 1          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b ; work         ;
+;          |NAND3_SmallJordan:nand3c| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3c ; work         ;
+;          |NAND3_SmallJordan:nand3e| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa2|   ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2                          ; work         ;
+;          |NAND3_SmallJordan:nand3b| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b ; work         ;
+;          |NAND3_SmallJordan:nand3c| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a ; work         ;
+;       |FullAdder_SmallJordan:fa3|   ; 5          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3                          ; work         ;
+;          |NAND3_SmallJordan:nand3b| ; 0          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b ; work         ;
+;          |NAND3_SmallJordan:nand3e| ; 3          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e ; work         ;
+;          |NAND4_SmallJordan:nand4a| ; 2          ; 0    ; |EightBitAdder_SmallJordan|FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a ; work         ;
++-------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                       ;
++---------------------------------------------------------------------------------------------+---------+
+; Name                                                                                        ; Fan-Out ;
++---------------------------------------------------------------------------------------------+---------+
+; B0                                                                                          ; 17      ;
+; A0                                                                                          ; 16      ;
+; Cin                                                                                         ; 15      ;
+; B1                                                                                          ; 14      ;
+; A1                                                                                          ; 14      ;
+; A2                                                                                          ; 12      ;
+; B2                                                                                          ; 11      ;
+; A5                                                                                          ; 11      ;
+; B5                                                                                          ; 10      ;
+; B3                                                                                          ; 9       ;
+; A3                                                                                          ; 9       ;
+; A4                                                                                          ; 8       ;
+; A6                                                                                          ; 8       ;
+; B4                                                                                          ; 7       ;
+; B6                                                                                          ; 7       ;
+; B7                                                                                          ; 6       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal     ; 6       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal     ; 6       ;
+; A7                                                                                          ; 5       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal     ; 5       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~4        ; 4       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~5        ; 3       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2        ; 3       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b|Y~3sexpbal ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b|Y~3sexp    ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b|Y~3sexp    ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c|w1~1sexp   ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12       ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~6        ; 2       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~7        ; 2       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~6        ; 2       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~5        ; 2       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3c|w1~1sexp   ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3b|Y~3sexp    ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b|Y~3sexp    ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~9        ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~13       ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~10       ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~8        ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~9        ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~13       ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~9        ; 1       ;
+; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a|Y~9        ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~14       ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~8        ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~45       ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~39       ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~19       ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~16       ; 1       ;
+; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~12       ; 1       ;
++---------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------+
+; Interconnect Usage Summary                     ;
++----------------------------+-------------------+
+; Interconnect Resource Type ; Usage             ;
++----------------------------+-------------------+
+; Output enables             ; 0 / 6 ( 0 % )     ;
+; PIA buffers                ; 42 / 144 ( 29 % ) ;
++----------------------------+-------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 8.25) ; Number of LABs  (Total = 4) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 0                           ;
+; 1                                      ; 0                           ;
+; 2                                      ; 2                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 0                           ;
+; 5                                      ; 0                           ;
+; 6                                      ; 0                           ;
+; 7                                      ; 0                           ;
+; 8                                      ; 0                           ;
+; 9                                      ; 0                           ;
+; 10                                     ; 0                           ;
+; 11                                     ; 0                           ;
+; 12                                     ; 0                           ;
+; 13                                     ; 1                           ;
+; 14                                     ; 0                           ;
+; 15                                     ; 0                           ;
+; 16                                     ; 1                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------+
+; Parallel Expander                                       ;
++--------------------------+------------------------------+
+; Parallel Expander Length ; Number of Parallel Expanders ;
++--------------------------+------------------------------+
+; 0                        ; 0                            ;
+; 1                        ; 6                            ;
+; 2                        ; 5                            ;
++--------------------------+------------------------------+
+
+
++-------------------------------------------------------------------------------+
+; Shareable Expander                                                            ;
++-------------------------------------------------+-----------------------------+
+; Number of shareable expanders  (Average = 3.00) ; Number of LABs  (Total = 4) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 2                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ; Output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC5        ; B0, Cin, A0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; S0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  A  ; LC10       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~16, B2, B1, A1, A2, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, B0, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, Cin                                                                                                                                                                                                                                                                                                                                                    ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~14                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC11       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~19, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~5, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~4, Cin, B2, A2, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~6, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, B0                                                                                          ; S2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  A  ; LC14       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~45, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~5, Cin, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~4, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2, A3, B3, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal, B0, A0 ; S3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  A  ; LC12       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2, A3, B3, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~6, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~4                                                                                                                                                                                                                                                                                                                                                                            ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~45                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC13       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~39, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~4, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2, B0, A3, B3, B2, A2, B1, A1, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal, Cin                                                                                                                                                                                                                                                             ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~32                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC16       ; B3, A3, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~5, B2, A2, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal, B1, A1, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, B0, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, Cin                                                                                                                                                                                                                                                    ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  A  ; LC3        ; B4, A4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC4        ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~13, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~6, B3, A3, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~5, B2, A2, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal, B1, A1, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, B0, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, Cin                                                                       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~7                                                                                                                                                                                                                                                                                                                                                               ;
+;  A  ; LC1        ; B4, A4, A5, B5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~12                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  A  ; LC8        ; A0, B0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~14, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~19, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~32, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~11, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~12 ;
+;  A  ; LC2        ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~13, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~6, B3, A3, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~5, B2, A2, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~3bal, B1, A1, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~3bal, B0, A0, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2bal, Cin                                                                       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  A  ; LC6        ; A1, B1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~14, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~19, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~32, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~11, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~12 ;
+;  A  ; LC7        ; A2, B2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~32, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~45, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~11, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~12                                                                                        ;
+;  A  ; LC15       ; A5, B5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~7, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                               ;
+;  A  ; LC9        ; B2, B1, A1, A2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~19                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC19       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~12, Cin, B1, A0, A1, B0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ; S1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  B  ; LC28       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~14, Cin, A0, B1, B2, B0, A1, A2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a|Y~2, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a|Y~9                                                                                                                                                                                                                                                                                                                                                               ;
+;  B  ; LC30       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~9, A5, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12, A6, B5, B6, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b|Y~3sexpbal                                                                                                                                                                                                                                                                                                                                                                ; S6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  B  ; LC25       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~10, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e|Y~12, A6, B7, A7, B6, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b|Y~3sexpbal, A5, B5                                                                                                                                                                                                                                                                                                                                                       ; Cout                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC21       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~9, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e|Y~12, A7, B7, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c|w1~1sexp, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3c|w1~1sexp, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b|Y~3sexp, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b|Y~3sexp, A5, B5                                                                                   ; S7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  B  ; LC17       ; Cin, B1, A0, A1, B0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~12                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC18       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~9, B1, B0, A0, A1, Cin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~7                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC23       ; B6, B7, A6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~10                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC24       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~8, A5, B5, B6, A7, A6, B7                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~7                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC27       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~8, B0, A0, B1, A2, A1, Cin, B2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~7                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC20       ; A7, B7, A6, B6, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b|Y~3sexp, A5, B5, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b|Y~3sexp, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c|w1~1sexp                                                                                                                                                                                                                                                                                                                                                   ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  B  ; LC26       ; Cin, A0, A1, A2, B0, B1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ; FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~14                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+;  B  ; LC29       ; A5, A6, B5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  C  ; LC35       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a|Y~9, A3, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~7, A4, B3, B4                                                                                                                                                                                                                                                                                                                                                                                                                                                              ; S4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  C  ; LC34       ; A4, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e|Y~7, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b|Y~3sexp                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
+;  D  ; LC51       ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~9, A4, FourBitAdder_SmallJordan:fba0|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e|Y~11, A5, B4, B5, FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3b|Y~3sexp                                                                                                                                                                                                                                                                                                                                                                   ; S5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+;  D  ; LC50       ; A4, A5, B4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ; FourBitAdder_SmallJordan:fba1|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a|Y~2                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Oct 13 18:49:15 2023
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off EightBitAdder_SmallJordan -c EightBitAdder_SmallJordan
+Info: Selected device EPM3064ALC44-10 for design "EightBitAdder_SmallJordan"
+Info: Quartus II Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 203 megabytes
+    Info: Processing ended: Fri Oct 13 18:49:16 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,25 @@
+--8bit Adder, built using two 4bit Adders
+--Jordan Small, 10/13/2023
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE work.adders_SmallJordan.all;
+
+ENTITY EightBitAdder_SmallJordan IS
+	PORT (A7,A6,A5,A4,A3,A2,A1,A0 : IN STD_LOGIC;
+	      B7,B6,B5,B4,B3,B2,B1,B0 : IN STD_LOGIC;
+	      Cin                     : IN STD_LOGIC;
+	      
+	      Cout                    : OUT STD_LOGIC;
+	      S7,S6,S5,S4,S3,S2,S1,S0 : OUT STD_LOGIC);
+END EightBitAdder_SmallJordan;
+
+--structural architecture
+
+ARCHITECTURE structure of EightBitAdder_SmallJordan IS
+	SIGNAL C : STD_LOGIC;
+	
+BEGIN
+fba0: FourBitAdder_SmallJordan PORT MAP (A3,A2,A1,A0,B3,B2,B1,B0,Cin,C,S3,S2,S1,S0);
+fba1: FourBitAdder_SmallJordan PORT MAP (A7,A6,A5,A4,B7,B6,B5,B4,C,Cout,S7,S6,S5,S4);
+END structure;

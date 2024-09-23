@@ -1,0 +1,8 @@
+|Mux2to1_SmallJordan
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

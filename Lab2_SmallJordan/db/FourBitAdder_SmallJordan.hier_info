@@ -1,0 +1,269 @@
+|FourBitAdder_SmallJordan
+A3 => FullAdder_SmallJordan:fa3.A
+A2 => FullAdder_SmallJordan:fa2.A
+A1 => FullAdder_SmallJordan:fa1.A
+A0 => FullAdder_SmallJordan:fa0.A
+B3 => FullAdder_SmallJordan:fa3.B
+B2 => FullAdder_SmallJordan:fa2.B
+B1 => FullAdder_SmallJordan:fa1.B
+B0 => FullAdder_SmallJordan:fa0.B
+Cin => FullAdder_SmallJordan:fa0.Cin
+Cout <= FullAdder_SmallJordan:fa3.Cout
+S3 <= FullAdder_SmallJordan:fa3.Sum
+S2 <= FullAdder_SmallJordan:fa2.Sum
+S1 <= FullAdder_SmallJordan:fa1.Sum
+S0 <= FullAdder_SmallJordan:fa0.Sum
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0
+A => w[1].IN0
+A => w[10].IN0
+A => w[11].IN0
+A => NAND3_SmallJordan:nand3c.A
+A => NAND3_SmallJordan:nand3d.A
+B => w[2].IN0
+B => w[9].IN0
+B => w[11].IN1
+B => NAND3_SmallJordan:nand3a.C
+B => NAND3_SmallJordan:nand3c.B
+Cin => w[3].IN0
+Cin => w[9].IN1
+Cin => w[10].IN1
+Cin => NAND3_SmallJordan:nand3b.A
+Cin => NAND3_SmallJordan:nand3c.C
+Cout <= NAND3_SmallJordan:nand3e.Y
+Sum <= NAND4_SmallJordan:nand4a.Y
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3a
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3b
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3c
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3d
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND4_SmallJordan:nand4a
+A => w1.IN0
+B => w1.IN1
+C => w2.IN0
+D => w2.IN1
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa0|NAND3_SmallJordan:nand3e
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1
+A => w[1].IN0
+A => w[10].IN0
+A => w[11].IN0
+A => NAND3_SmallJordan:nand3c.A
+A => NAND3_SmallJordan:nand3d.A
+B => w[2].IN0
+B => w[9].IN0
+B => w[11].IN1
+B => NAND3_SmallJordan:nand3a.C
+B => NAND3_SmallJordan:nand3c.B
+Cin => w[3].IN0
+Cin => w[9].IN1
+Cin => w[10].IN1
+Cin => NAND3_SmallJordan:nand3b.A
+Cin => NAND3_SmallJordan:nand3c.C
+Cout <= NAND3_SmallJordan:nand3e.Y
+Sum <= NAND4_SmallJordan:nand4a.Y
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3a
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3b
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3c
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3d
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND4_SmallJordan:nand4a
+A => w1.IN0
+B => w1.IN1
+C => w2.IN0
+D => w2.IN1
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa1|NAND3_SmallJordan:nand3e
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2
+A => w[1].IN0
+A => w[10].IN0
+A => w[11].IN0
+A => NAND3_SmallJordan:nand3c.A
+A => NAND3_SmallJordan:nand3d.A
+B => w[2].IN0
+B => w[9].IN0
+B => w[11].IN1
+B => NAND3_SmallJordan:nand3a.C
+B => NAND3_SmallJordan:nand3c.B
+Cin => w[3].IN0
+Cin => w[9].IN1
+Cin => w[10].IN1
+Cin => NAND3_SmallJordan:nand3b.A
+Cin => NAND3_SmallJordan:nand3c.C
+Cout <= NAND3_SmallJordan:nand3e.Y
+Sum <= NAND4_SmallJordan:nand4a.Y
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3a
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3b
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3c
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3d
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND4_SmallJordan:nand4a
+A => w1.IN0
+B => w1.IN1
+C => w2.IN0
+D => w2.IN1
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa2|NAND3_SmallJordan:nand3e
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3
+A => w[1].IN0
+A => w[10].IN0
+A => w[11].IN0
+A => NAND3_SmallJordan:nand3c.A
+A => NAND3_SmallJordan:nand3d.A
+B => w[2].IN0
+B => w[9].IN0
+B => w[11].IN1
+B => NAND3_SmallJordan:nand3a.C
+B => NAND3_SmallJordan:nand3c.B
+Cin => w[3].IN0
+Cin => w[9].IN1
+Cin => w[10].IN1
+Cin => NAND3_SmallJordan:nand3b.A
+Cin => NAND3_SmallJordan:nand3c.C
+Cout <= NAND3_SmallJordan:nand3e.Y
+Sum <= NAND4_SmallJordan:nand4a.Y
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3a
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3b
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3c
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3d
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND4_SmallJordan:nand4a
+A => w1.IN0
+B => w1.IN1
+C => w2.IN0
+D => w2.IN1
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FourBitAdder_SmallJordan|FullAdder_SmallJordan:fa3|NAND3_SmallJordan:nand3e
+A => w1.IN0
+B => w1.IN1
+C => Y~0.IN0
+Y <= Y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

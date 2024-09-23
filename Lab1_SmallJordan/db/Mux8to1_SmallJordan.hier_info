@@ -1,0 +1,95 @@
+|Mux8to1_SmallJordan
+A => Mux4to1_SmallJordan:muxA.I0
+B => Mux4to1_SmallJordan:muxA.I1
+C => Mux4to1_SmallJordan:muxA.I2
+D => Mux4to1_SmallJordan:muxA.I3
+E => Mux4to1_SmallJordan:muxB.I0
+F => Mux4to1_SmallJordan:muxB.I1
+G => Mux4to1_SmallJordan:muxB.I2
+H => Mux4to1_SmallJordan:muxB.I3
+Sc => Mux2to1_SmallJordan:muxC.S
+Sb => Mux4to1_SmallJordan:muxA.s0
+Sb => Mux4to1_SmallJordan:muxB.s0
+Sa => Mux4to1_SmallJordan:muxA.s1
+Sa => Mux4to1_SmallJordan:muxB.s1
+Y <= Mux2to1_SmallJordan:muxC.Y
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxA
+I0 => Mux2to1_SmallJordan:mux0.X1
+I1 => Mux2to1_SmallJordan:mux0.X2
+I2 => Mux2to1_SmallJordan:mux1.X1
+I3 => Mux2to1_SmallJordan:mux1.X2
+s1 => Mux2to1_SmallJordan:mux2.S
+s0 => Mux2to1_SmallJordan:mux0.S
+s0 => Mux2to1_SmallJordan:mux1.S
+Y <= Mux2to1_SmallJordan:mux2.Y
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux0
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux1
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux2
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxB
+I0 => Mux2to1_SmallJordan:mux0.X1
+I1 => Mux2to1_SmallJordan:mux0.X2
+I2 => Mux2to1_SmallJordan:mux1.X1
+I3 => Mux2to1_SmallJordan:mux1.X2
+s1 => Mux2to1_SmallJordan:mux2.S
+s0 => Mux2to1_SmallJordan:mux0.S
+s0 => Mux2to1_SmallJordan:mux1.S
+Y <= Mux2to1_SmallJordan:mux2.Y
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux0
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux1
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux2
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Mux8to1_SmallJordan|Mux2to1_SmallJordan:muxC
+X1 => w2.IN0
+X2 => w3.IN0
+S => w1.IN0
+S => w3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

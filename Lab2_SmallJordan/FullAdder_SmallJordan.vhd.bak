@@ -1,0 +1,39 @@
+--FullAdder, built by using 3 and 4-input NAND's
+--Jordan Small, 10/11/2023
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY FullAdder_SmallJordan IS
+	PORT (A,B,Cin: IN  STD_LOGIC;
+		Cout,Sum: OUT STD_LOGIC);
+END FullAdder_SmallJordan;
+
+--structural specification
+ARCHITECTURE structure of FullAdder_SmallJordan IS
+	SIGNAL w: STD_LOGIC_VECTOR(1 TO 11);
+
+COMPONENT NAND3_SmallJordan IS
+	PORT(A,B,C: IN  STD_LOGIC;
+		 Y    : OUT STD_LOGIC);
+END COMPONENT NAND3_SmallJordan;
+
+COMPONENT NAND4_SmallJordan IS
+	PORT(A,B,C,D: IN STD_LOGIC;
+		 Y      : OUT STD_LOGIC);
+END COMPONENT NAND4_SmallJordan;
+
+BEGIN
+w(1)  <= A   NAND A;
+w(2)  <= B   NAND B;
+w(3)  <= Cin NAND Cin;
+w(9)  <= B   NAND Cin;
+w(10) <= A   NAND Cin;
+w(11) <= A   NAND B;
+nand3a: NAND3_SmallJordan PORT MAP(w(3), w(1), B, w(4));
+nand3b: NAND3_SmallJordan PORT MAP(Cin, w(2), w(1),w(5));
+nand3c: NAND3_SmallJordan PORT MAP(A, B, Cin, w(6));
+nand3d: NAND3_SmallJordan PORT MAP(A, w(2), w(3), w(7));
+nand4a: NAND4_SmallJordan PORT MAP(w(4), w(5), w(6), w(7), Sum);
+nand3e: NAND3_SmallJordan PORT MAP(w(9), w(10), w(11), Cout);
+END structure;

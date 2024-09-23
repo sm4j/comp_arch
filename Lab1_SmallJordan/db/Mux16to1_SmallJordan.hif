@@ -1,0 +1,173 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+29
+1784
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Mux16to1_SmallJordan
+# storage
+db|Mux16to1_SmallJordan.(0).cnf
+db|Mux16to1_SmallJordan.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux16to1_smalljordan.vhd
+d0f99f608f9ca1d43ff552a6680e7ae
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux8to1_SmallJordan
+# storage
+db|Mux16to1_SmallJordan.(1).cnf
+db|Mux16to1_SmallJordan.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux8to1_smalljordan.vhd
+16479d39d110925a39107e62b3b91a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux8to1_SmallJordan:muxA
+Mux8to1_SmallJordan:muxB
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux4to1_SmallJordan
+# storage
+db|Mux16to1_SmallJordan.(2).cnf
+db|Mux16to1_SmallJordan.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux4to1_smalljordan.vhd
+811a42abf9ba289b8591d816e25e2b6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxA
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxB
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxA
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxB
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+Mux2to1_SmallJordan
+# storage
+db|Mux16to1_SmallJordan.(3).cnf
+db|Mux16to1_SmallJordan.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux2to1_smalljordan.vhd
+615097a7c962b5aafdd72545ee5622d1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux0
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux1
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux2
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux0
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux1
+Mux8to1_SmallJordan:muxA|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux2
+Mux8to1_SmallJordan:muxA|Mux2to1_SmallJordan:muxC
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux0
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux1
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxA|Mux2to1_SmallJordan:mux2
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux0
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux1
+Mux8to1_SmallJordan:muxB|Mux4to1_SmallJordan:muxB|Mux2to1_SmallJordan:mux2
+Mux8to1_SmallJordan:muxB|Mux2to1_SmallJordan:muxC
+Mux2to1_SmallJordan:muxC
+}
+# lmf
+|altera|91sp2|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

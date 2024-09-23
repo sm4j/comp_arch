@@ -1,0 +1,5 @@
+--Lab 2: Half Adder, built from 2-input NANDs
+--Jordan Small, 10/05/2023
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
